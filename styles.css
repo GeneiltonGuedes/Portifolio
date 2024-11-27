@@ -1,4 +1,4 @@
-/* Variáveis de cor */
+@charset "UTF-8";
 :root {
     --primary-color: #36BFB1;
     --primary-dark: #038C73;
@@ -9,11 +9,12 @@
     --light-gray: #d9d9d9;
 }
 
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -154,7 +155,7 @@ header nav h1 a:hover {
     padding: 20px;
     box-sizing: border-box;
 }
-
+/*projetos*/
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -185,6 +186,26 @@ header nav h1 a:hover {
     transition: transform 0.3s ease;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.253);
 }
+
+.links{
+    text-decoration: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding: 10px 20px;
+    background: var(--primary-dark);
+    color: var(--text-color);
+    border-radius: 50px;
+    font-weight: normal;
+    font-size: small;
+    transition: background 0.3s ease, transform 0.3s ease
+}
+.links:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+}
+.back{
+    padding-bottom: 25px;
+}
 #projetos h2{
     padding-bottom: 20px;
 }
@@ -198,6 +219,7 @@ header nav h1 a:hover {
     cursor: pointer;
     border-radius: 50px;
     font-weight: bold;
+    font-size: small;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
@@ -229,14 +251,14 @@ header nav h1 a:hover {
 
 #image-modal .modal-content {
     position: relative;
-    max-width: 90vw; /* 90% da largura da tela */
-    max-height: 90vh; /* 90% da altura da tela */
+    max-width: 90vw; 
+    max-height: 90vh; 
 }
 
 #image-modal img {
     width: 100%;
     height: auto;
-    max-height: 90vh; /* Limita a altura a 90% da tela */
+    max-height: 90vh; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -258,7 +280,7 @@ header nav h1 a:hover {
 #image-modal .close:hover {
     transform: scale(1.1);
 }
-
+/*Habilidades*/
 .skills li {
     background: var(--primary-color);
     color: var(--text-color);
