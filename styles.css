@@ -130,6 +130,9 @@ header nav h1 a:hover {
     text-align: center;
     background: var(--background-color);
 }
+.section p {
+    padding-bottom: 10px;
+}
 
 #sobre img {
     max-width: 200px;
