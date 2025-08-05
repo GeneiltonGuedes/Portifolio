@@ -93,42 +93,33 @@
     </section>
 
     <section id="contato" class="section">
-        <h2>Contatos</h2>
-        <div class="social-links">
-            <a href="https://wa.me/qr/KF6GY65R2GILK1" target="_blank" class="social-icon">
-                <img src="fotos/whatsapp.png" alt="whatsapp">
-            </a>
-            <a href="https://www.instagram.com/_genn.os/?hl=pt-br" target="_blank" class="social-icon">
-                <img src="fotos/instagram.png" alt="instagram">
-            </a>
-            <a href="https://www.linkedin.com/in/geneiltonguedes/" target="_blank" class="social-icon">
-                <img src="fotos/linkedin.png" alt="linkedin"></a>
-            <a href="https://github.com/GeneiltonGuedes" target="_blank" class="social-icon">
-                <img src="fotos/git.png" alt="guithub">
-            </a>
-        </div>
-    </section>
-    <form action="https://getform.io/f/bvryvgjb" method="POST">
-    <input type="text" name="name">
-    <input type="email" name="email">
-    <input type="text" name="message">
-    <!-- add hidden Honeypot input to prevent spams -->
-    <input type="hidden" name="_gotcha" style="display:none !important">
-    <!-- checkbox handle -->
-    <input type="checkbox" name="subscribe" value="yes" checked>
-    <input type="hidden" name="subscribe" value="no">
-    <!-- radio button handle -->
-    <input type="radio" name="gender" value="male" checked>
-    <input type="radio" name="gender" value="female">
-    <input type="radio" name="gender" value="other">
-    <!-- select field handle -->
-    <select name="work-experience">
-        <option value="one-year">0-1 years</option>
-        <option value="one-five-years">1-5 years</option>
-    </select>
-    <button type="submit">Send</button>
-</form>
-
+    <h2>Entre em Contato</h2>
+    <form 
+        action="https://getform.io/f/bvryvgjb" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <input type="text" name="assunto" placeholder="Assunto" required>
+        <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+<!--
+  <div class="social-links">
+        <a href="https://wa.me/qr/KF6GY65R2GILK1" target="_blank" class="social-icon">
+            <img src="fotos/whatsapp.png" alt="whatsapp">
+        </a>
+        <a href="https://www.instagram.com/_genn.os/?hl=pt-br" target="_blank" class="social-icon">
+            <img src="fotos/instagram.png" alt="instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/geneiltonguedes/" target="_blank" class="social-icon">
+            <img src="fotos/linkedin.png" alt="linkedin">
+        </a>
+        <a href="https://github.com/GeneiltonGuedes" target="_blank" class="social-icon">
+            <img src="fotos/git.png" alt="github">
+        </a>
+    </div>  
+            -->
+</section>
+              
     <footer>
         <p>© 2024 Geneilton Guedes. Todos os direitos reservados.</p>
     </footer>
